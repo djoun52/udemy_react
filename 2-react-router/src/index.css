@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  max-width: 1380px;
+  margin: auto;
+  background-color: rgb(240, 240, 240);
+}
+
+nav {
+  margin: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 10px;
+  font-size: 18px;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+.activeLink {
+  background: lightblue
+}

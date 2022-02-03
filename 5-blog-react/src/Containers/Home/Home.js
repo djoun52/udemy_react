@@ -12,30 +12,7 @@ export default function home() {
                 <Card>
                     <h2>Hello Card</h2>
                 </Card>
-                <Card>
-                    <h2>Hello Card1</h2>
-                </Card>
-                <Card>
-                    <h2>Hello Card</h2>
-                </Card>
-                <Card>
-                    <h2>Hello Card</h2>
-                </Card>
-                <Card>
-                    <h2>Hello Card</h2>
-                </Card>
-                <Card>
-                    <h2>Hello Card</h2>
-                </Card>
-                <Card>
-                    <h2>Hello Card</h2>
-                </Card>
-                <Card>
-                    <h2>Hello Card</h2>
-                </Card>
-                <Card>
-                    <h2>Hello Card</h2>
-                </Card>
+                
             </div>
 
         </>

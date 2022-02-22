@@ -5,15 +5,16 @@ import { useSelector , useDispatch} from 'react-redux';
 import { useState , useEffect} from 'react'
 import {getArticles} from '../../redux/articles/articleReducer'
 import {v4 as uuidv4} from 'uuid';
+import {Link} from 'react-router-dom'
 
 export default function Home() {
 
     const {articles} = useSelector(state =>({
         ...state.articleReducer,
     }))
-    
-    const dispatch = useDispatch()
 
+    const dispatch = useDispatch()
+    
     useEffect(() => {
         if (articles.length === 0){
             dispatch(getArticles());
@@ -27,7 +28,11 @@ export default function Home() {
                     return (
                         <Card key={uuidv4()}>
                             <h2>{item.title}</h2>
-                            <a href="#">Lire l'article</a>
+                            <Link to={`articles/${item.title.replace(/\s+/g, '-').trim()}`}
+                            state={{
+                                    title: item.title,
+                                    body: item.body
+                                }} >Lire l'article </Link>
                         </Card>
                     )
                 })}
